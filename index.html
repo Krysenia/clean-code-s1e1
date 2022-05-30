@@ -6,10 +6,12 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body class="page">
-    <div class="main-page-desc-img"><img src="./eisenhower-matrix.jpg" class="page-img"><a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a></div>
-    <div class="centered-main-page-element">
+    <header>
+      <section class="main-page-desc-img"><img src="./eisenhower-matrix.jpg" class="page-img"><a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a></section>
+    </header>
+    <main class="centered-main-page-element">
       <p id="top-section-for-adding-element-to-list"><label id="add-item" for="new-task">Add Item</label>
-      <div class="task-row-wrapper"><input id="new-task"class="task" type="text"><button id="frame">Add</button></div>
+      <section class="task-row-wrapper"><input id="new-task"class="task" type="text"><button id="frame">Add</button></section>
       </p>
       <h3 id="tag-h3" class="marker">Todo</h3>
       <ul id="incomplete-tasks" class="list">
@@ -20,7 +22,7 @@
       <ul id="completed-tasks" class="list">
         <li id="element" class="marker"><input id="frame" type="checkbox" checked><label id="text-element" class="task">See the Doctor</label><input type="text" id="frame" class="task task_display_none"><button id="frame" class="edit">Edit</button><button id="frame" class="delete"><img class="btn-del" src="./remove.svg"></button></li>
       </ul>
-    </div>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
