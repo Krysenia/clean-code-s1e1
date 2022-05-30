@@ -5,20 +5,20 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
-  <body>
-    <div class="main-page-desc-img"><img src="./eisenhower-matrix.jpg"><a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a></div>
+  <body class="page">
+    <div class="main-page-desc-img"><img src="./eisenhower-matrix.jpg" class="page-img"><a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a></div>
     <div class="centered-main-page-element">
-      <p id="top-section-for-adding-element-to-list"><label for="new-task">Add Item</label>
-      <div class="task-row-wrapper"><input id="new-task"class="task" type="text"><button>Add</button></div>
+      <p id="top-section-for-adding-element-to-list"><label id="add-item" for="new-task">Add Item</label>
+      <div class="task-row-wrapper"><input id="new-task"class="task" type="text"><button id="frame">Add</button></div>
       </p>
-      <h3>Todo</h3>
-      <ul id="incomplete-tasks">
-        <li><input type="checkbox"><label class="task">Pay Bills</label><input type="text" class="task"><button class="edit">Edit</button><button class="delete"><img src="./remove.svg"></button></li>
-        <li class="edit-mode"><input type="checkbox"><label class="task">Go Shopping</label><input type="text" value="Go Shopping" class="task"><button class="edit">Save</button><button class="delete"><img src="./remove.svg"></button></li>
+      <h3 id="tag-h3" class="marker">Todo</h3>
+      <ul id="incomplete-tasks" class="list">
+        <li id="element" class="marker"><input id="frame" type="checkbox"><label id="text-element" class="task">Pay Bills</label><input type="text" id="frame" class="task task_display_none"><button id="frame" class="edit">Edit</button><button id="frame" class="delete"><img class="btn-del" src="./remove.svg"></button></li>
+        <li id="element" class="edit-mode"><input id="frame" type="checkbox"><label id="text-element" class="task task__todo-name_none">Go Shopping</label><input type="text" value="Go Shopping" id="frame" class="task task_display_none task_display_inline-block"><button id="frame" class="edit">Save</button><button id="frame" class="delete"><img class="btn-del" src="./remove.svg"></button></li>
       </ul>
-      <h3>Completed</h3>
-      <ul id="completed-tasks">
-        <li><input type="checkbox" checked><label class="task">See the Doctor</label><input type="text" class="task"><button class="edit">Edit</button><button class="delete"><img src="./remove.svg"></button></li>
+      <h3 id="tag-h3" class="marker">Completed</h3>
+      <ul id="completed-tasks" class="list">
+        <li id="element" class="marker"><input id="frame" type="checkbox" checked><label id="text-element" class="task">See the Doctor</label><input type="text" id="frame" class="task task_display_none"><button id="frame" class="edit">Edit</button><button id="frame" class="delete"><img class="btn-del" src="./remove.svg"></button></li>
       </ul>
     </div>
     <script src="app.js"></script>

@@ -31,17 +31,21 @@ var createNewTaskElement = function (taskString) {
 
   label.innerText = taskString;
   label.className = 'task';
+  label.id = 'text-element';
 
   //Each elements, needs appending
   checkBox.type = 'checkbox';
+  checkBox.id = 'frame';
   editInput.type = 'text';
-  editInput.className = 'task';
+  editInput.className = 'task task_display_none';
+  editInput.id = 'frame';
 
   editButton.innerText = 'Edit'; //innerText encodes special characters, HTML does not.
   editButton.className = 'edit';
 
   deleteButton.className = 'delete';
   deleteButtonImg.src = './remove.svg';
+  deleteButtonImg.className = 'btn-del';
   deleteButton.appendChild(deleteButtonImg);
 
   //and appending.
@@ -50,6 +54,7 @@ var createNewTaskElement = function (taskString) {
   listItem.appendChild(editInput);
   listItem.appendChild(editButton);
   listItem.appendChild(deleteButton);
+  listItem.id = 'element';
   return listItem;
 };
 
@@ -91,6 +96,8 @@ var editTask = function () {
 
   //toggle .editmode on the parent.
   listItem.classList.toggle('edit-mode');
+  editInput.classList.toggle('task_display_inline-block');
+  label.classList.toggle('task__todo-name_none');
 };
 
 //Delete task.
