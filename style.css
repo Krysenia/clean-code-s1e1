@@ -78,7 +78,7 @@
   text-transform: uppercase;
 }
 
-.task[for='new-task'] {
+.task[for="new-task"] {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -88,7 +88,7 @@
   text-transform: uppercase;
 }
 
-.task[type='text'] {
+.task[type="text"] {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -101,12 +101,12 @@
   color: #888;
 }
 
-.task[type='text']:focus {
+.task[type="text"]:focus {
   color: #333;
 }
 
 /* New Task! */
-#add-item[for='new-task'] {
+#add-item[for="new-task"] {
   display: block;
   margin: 0 0 20px;
 }
@@ -130,7 +130,7 @@
   vertical-align: middle;
 }
 
-#frame[type='checkbox'] {
+#frame[type="checkbox"] {
   margin: 0 10px;
 }
 
@@ -141,7 +141,7 @@
   width: 226px;
 }
 
-#frame[type='text'] {
+#frame[type="text"] {
   width: 226px;
 }
 
@@ -156,11 +156,11 @@
 }
 
 /* Edit Task! */
-.task_display_none[type='text'] {
+.task_display_none[type="text"] {
   display: none;
 }
 
-.task_display_inline-block[type='text'] {
+.task_display_inline-block[type="text"] {
   display: inline-block;
   width: 224px;
 }
